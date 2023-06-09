@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function chiSoBMI() {
+            let a = +prompt("Nhập cân nặng");
+            let b = +prompt("Nhập chiều cao");
+            let BMI = a / (b * b);
+            if (BMI > 40) {
+                result = "Béo phì cấp độ III"
+            } else if (BMI >= 35 && BMI < 40) {
+                result = "Béo phì cấp độ II"
+            } else if (BMI >= 30 && BMI < 35) {
+                result = "Béo phì cấp độ I"
+            } else if (BMI >=25 && BMI < 30) {
+                result = "thừa cân"
+            } else if (BMI >= 18.5 && BMI < 25) {
+                result = "bình thường"
+            } else if (BMI >=17 && BMI < 18.5) {
+                result = "gầy cấp độ I"
+            } else if (BMI >=16 && BMI < 17) {
+                result = "gầy cấp độ II"
+            } else if (BMI < 16) {
+                result = "gầy cấp độ III"
+            }
+
+            alert(result);
+            console.log(result);
+            document.write(result)
+        }
+        chiSoBMI()
+    </script>
+</body>
+
+</html>
